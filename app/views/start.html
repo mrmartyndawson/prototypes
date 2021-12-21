@@ -58,6 +58,13 @@
 
       <p>You can’t register for this service if you’re in the UK illegally.</p>
 
+      {% from "govuk/components/details/macro.njk" import govukDetails %}
+
+      {{ govukDetails({
+        summaryText: "Options for non-British citizens",
+        text: "We need to know your nationality so we can work out which elections you’re entitled to vote in. If you cannot provide your nationality, you’ll have to send copies of identity documents through the post."
+      }) }}
+
     </div>
 
     <div class="govuk-grid-column-one-third">
